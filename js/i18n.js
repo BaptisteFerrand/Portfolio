@@ -17,7 +17,7 @@ const translations = {
 
     hero_eyebrow: "Bonjour, je suis",
     hero_role: "Alternant ingénieur en informatique & réseaux",
-    hero_bio: "Passionné par les systèmes, les réseaux et le développement, je conçois des infrastructures fiables et des applications utiles. Actuellement en recherche d'un stage à l'étranger pour mettre en pratique mes compétences dans un environnement international.",
+    hero_bio: "Ce qui me passionne, c'est de comprendre comment les choses fonctionnent ensemble : les systèmes, les réseaux, le code. J'aime construire des infrastructures sur lesquelles on peut compter et des applications qui servent vraiment à quelque chose. Je cherche aujourd'hui un stage à l'étranger pour confronter mes compétences à un environnement international et continuer à apprendre au contact d'autres façons de travailler.",
     hero_cta_projects: "Voir mes projets",
     hero_cta_contact: "Me contacter",
 
@@ -38,10 +38,10 @@ const translations = {
     project_tag_infra: "Infra",
     project1_title: "Conception d'un réseau d'entreprise",
     project1_desc: "Projet intégratif en équipe de 5 : conception complète du réseau d'une PME fictive — segmentation VLAN, Active Directory, ToIP et sécurité, du recueil des besoins à la mise en œuvre.",
-    project2_title: "Outil de supervision réseau",
-    project2_desc: "Script Python qui scanne le réseau local, détecte les équipements actifs et envoie une alerte en cas d'indisponibilité d'un hôte.",
-    project3_title: "Serveur auto-hébergé Docker",
-    project3_desc: "Déploiement de services conteneurisés (reverse proxy, monitoring, stockage) sur un serveur Linux, avec sauvegardes automatisées.",
+    project2_title: "En construction",
+    project2_desc: "//",
+    project3_title: "En construction",
+    project3_desc: "//",
 
     timeline_title: "Parcours",
     present: "aujourd'hui",
@@ -109,7 +109,7 @@ const translations = {
 
     hero_eyebrow: "Hi, I'm",
     hero_role: "IT & Networks engineering apprentice",
-    hero_bio: "Passionate about systems, networks and software development, I build reliable infrastructure and useful applications. Currently looking for an internship abroad to apply my skills in an international environment.",
+    hero_bio: "What drives me is understanding how things work together: systems, networks, code. I enjoy building infrastructure you can rely on and applications that are genuinely useful. I'm currently looking for an internship abroad to put my skills to the test in an international environment and keep learning from different ways of working.",
     hero_cta_projects: "View my projects",
     hero_cta_contact: "Get in touch",
 
@@ -129,11 +129,11 @@ const translations = {
     project_tag_dev: "Dev",
     project_tag_infra: "Infra",
     project1_title: "Designing a corporate network",
-    project1_desc: "Capstone project in a team of 5: full design of a fictional SME's network — VLAN segmentation, Active Directory, VoIP and security, from requirements gathering to implementation.",
-    project2_title: "Network monitoring tool",
-    project2_desc: "A Python script that scans the local network, detects active devices and sends an alert when a host becomes unreachable.",
-    project3_title: "Self-hosted Docker server",
-    project3_desc: "Deployment of containerized services (reverse proxy, monitoring, storage) on a Linux server, with automated backups.",
+    project1_desc: "Project in a team of 5: full design of a fictional SME's network — VLAN segmentation, Active Directory, VoIP and security, from requirements gathering to implementation.",
+    project2_title: "//",
+    project2_desc: "//",
+    project3_title: "Under construction",
+    project3_desc: "//",
 
     timeline_title: "Background",
     present: "present",

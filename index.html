@@ -12,7 +12,7 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231a1a1a'/><text x='50' y='52' font-family='Segoe UI,Helvetica,Arial,sans-serif' font-size='46' font-weight='800' fill='%23ffffff' text-anchor='middle' dominant-baseline='central'>BF<tspan fill='%234f8cff'>.</tspan></text></svg>" />
 
-  <link rel="stylesheet" href="css/style.css?v=6" />
+  <link rel="stylesheet" href="css/style.css?v=10" />
 </head>
 
 <body>
@@ -117,9 +117,7 @@
         <article class="project-card">
           <div class="project-head">
             <span class="project-tag" data-i18n="project_tag_network">Réseau</span>
-            <div class="project-links">
-              <a href="projet-integratif.html" aria-label="Voir le détail du projet" title="Détails">↗</a>
-            </div>
+            <a href="projet-integratif.html" class="project-detail-link" data-i18n="project_view_detail">Détail</a>
           </div>
           <h3><a href="projet-integratif.html" data-i18n="project1_title">Conception d'un réseau d'entreprise</a></h3>
           <p data-i18n="project1_desc">
@@ -132,41 +130,28 @@
           </ul>
         </article>
 
-        <!-- Projet 2 -->
-        <article class="project-card">
+        <!-- Projet 2 — en construction -->
+        <article class="project-card project-card--wip">
           <div class="project-head">
-            <span class="project-tag" data-i18n="project_tag_dev">Dev</span>
-            <div class="project-links">
-              <a href="#" aria-label="Code source" title="Code">&lt;/&gt;</a>
-              <a href="#" aria-label="Démo" title="Démo">↗</a>
-            </div>
+            <span class="project-tag project-tag--soon" data-i18n="project_tag_soon">Bientôt</span>
           </div>
-          <h3 data-i18n="project2_title">Outil de supervision réseau</h3>
-          <p data-i18n="project2_desc">
-            Script Python qui scanne le réseau local, détecte les équipements
-            actifs et envoie une alerte en cas d'indisponibilité d'un hôte.
-          </p>
-          <ul class="project-stack">
-            <li>Python</li><li>Scapy</li><li>SNMP</li>
-          </ul>
+          <div class="wip-body">
+            <span class="wip-icon" aria-hidden="true"></span>
+            <h3 data-i18n="project2_title">En construction</h3>
+            <p data-i18n="project_soon_desc">Un nouveau projet arrive bientôt.</p>
+          </div>
         </article>
 
-        <!-- Projet 3 -->
-        <article class="project-card">
+        <!-- Projet 3 — en construction -->
+        <article class="project-card project-card--wip">
           <div class="project-head">
-            <span class="project-tag" data-i18n="project_tag_infra">Infra</span>
-            <div class="project-links">
-              <a href="#" aria-label="Code source" title="Code">&lt;/&gt;</a>
-            </div>
+            <span class="project-tag project-tag--soon" data-i18n="project_tag_soon">Bientôt</span>
           </div>
-          <h3 data-i18n="project3_title">Serveur auto-hébergé Docker</h3>
-          <p data-i18n="project3_desc">
-            Déploiement de services conteneurisés (reverse proxy, monitoring,
-            stockage) sur un serveur Linux, avec sauvegardes automatisées.
-          </p>
-          <ul class="project-stack">
-            <li>Docker</li><li>Linux</li><li>Traefik</li><li>Bash</li>
-          </ul>
+          <div class="wip-body">
+            <span class="wip-icon" aria-hidden="true"></span>
+            <h3 data-i18n="project3_title">En construction</h3>
+            <p data-i18n="project_soon_desc">Un nouveau projet arrive bientôt.</p>
+          </div>
         </article>
       </div>
     </section>
@@ -273,7 +258,7 @@
     </div>
   </footer>
 
-  <script src="js/i18n.js?v=5"></script>
+  <script src="js/i18n.js?v=8"></script>
   <script src="js/main.js?v=4"></script>
 </body>
 </html>

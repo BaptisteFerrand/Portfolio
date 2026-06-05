@@ -66,7 +66,7 @@ const translations = {
     timeline3_org: "Lycée Toulouse-Lautrec, Toulouse (31)",
     timeline3_desc: "Spécialités Mathématiques et Physique-Chimie. Section européenne anglais.",
     cv_download: "Télécharger mon CV",
-    cv_file: "assets/cv-fr.pdf",
+    cv_file: "assets/CV-Baptiste_FERRAND.pdf",
 
     contact_title: "Contact",
     contact_lead: "Une opportunité de stage à l'étranger, une question, ou juste envie d'échanger ? N'hésite pas à me contacter.",
@@ -161,7 +161,7 @@ const translations = {
     timeline3_org: "Lycée Toulouse-Lautrec, Toulouse (France)",
     timeline3_desc: "Majors in Mathematics and Physics-Chemistry. English European section.",
     cv_download: "Download my CV",
-    cv_file: "assets/cv-en.pdf",
+    cv_file: "assets/CV_en-Baptiste_FERRAND.pdf",
 
     contact_title: "Contact",
     contact_lead: "An internship opportunity abroad, a question, or just want to chat? Feel free to reach out.",

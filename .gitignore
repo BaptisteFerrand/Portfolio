@@ -1,0 +1,16 @@
+# Documents personnels (téléphone, adresse, e-mail) — ne pas publier
+assets/cv-fr.pdf
+assets/cv-en.pdf
+assets/cv.pdf
+
+# Ancienne image remplacée par le schéma interactif
+assets/projet-integratif.png
+
+# Fichiers système / éditeur
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.log

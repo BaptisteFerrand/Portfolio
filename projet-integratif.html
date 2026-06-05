@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" data-i18n="pi_context_desc"
+    content="Projet intégratif — conception du réseau d'une PME fictive en équipe." />
+  <meta name="author" content="Baptiste Ferrand" />
+  <title>Projet intégratif — Baptiste Ferrand</title>
+
+  <!-- Favicon « BF. » intégré en SVG (aucune dépendance externe) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231a1a1a'/><text x='50' y='52' font-family='Segoe UI,Helvetica,Arial,sans-serif' font-size='46' font-weight='800' fill='%23ffffff' text-anchor='middle' dominant-baseline='central'>BF<tspan fill='%234f8cff'>.</tspan></text></svg>" />
+
+  <link rel="stylesheet" href="css/style.css?v=7" />
+</head>
+
+<body>
+  <!-- Skip link accessibilité -->
+  <a class="skip-link" href="#main" data-i18n="skip_link">Aller au contenu</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="index.html#top" class="brand">BF<span class="brand-dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+        aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#about" data-i18n="nav_about">À propos</a></li>
+        <li><a href="index.html#skills" data-i18n="nav_skills">Compétences</a></li>
+        <li><a href="index.html#projects" data-i18n="nav_projects">Projets</a></li>
+        <li><a href="index.html#timeline" data-i18n="nav_timeline">Parcours</a></li>
+        <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+        <li class="nav-controls">
+          <button class="ctrl-btn" id="langToggle" aria-label="Changer de langue">
+            <span id="langLabel">EN</span>
+          </button>
+          <button class="ctrl-btn" id="themeToggle" aria-label="Changer de thème">
+            <span class="theme-icon" aria-hidden="true">◐</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ EN-TÊTE PROJET ============ -->
+    <section class="project-hero container">
+      <a href="index.html#projects" class="detail-back" data-i18n="pi_back">← Retour aux projets</a>
+      <p class="hero-eyebrow" data-i18n="pi_eyebrow">Projet · BUT Réseaux &amp; Télécom</p>
+      <h1 data-i18n="pi_title">Conception d'un réseau d'entreprise</h1>
+      <p class="project-subtitle" data-i18n="pi_subtitle">Projet intégratif — 1ʳᵉ année</p>
+
+      <ul class="project-meta">
+        <li data-i18n="pi_meta_team">Équipe de 5</li>
+        <li data-i18n="pi_meta_duration">2 semaines</li>
+        <li data-i18n="pi_meta_year">2024</li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTEXTE ============ -->
+    <section class="detail-section container detail-prose">
+      <h2 data-i18n="pi_context_title">Contexte</h2>
+      <p data-i18n="pi_context_desc">
+        Réalisé en première année de BUT Réseaux &amp; Télécommunications, ce projet
+        intégratif nous a réunis en équipe de 5 sur deux semaines. La mission :
+        concevoir, de A à Z, le réseau d'une PME fictive en partant uniquement
+        d'un cahier des charges.
+      </p>
+    </section>
+
+    <!-- ============ OBJECTIF ============ -->
+    <section class="detail-section container detail-prose">
+      <h2 data-i18n="pi_goal_title">Objectif</h2>
+      <p data-i18n="pi_goal_desc">
+        Proposer une architecture réseau complète et cohérente, en tenant compte
+        des besoins métier, des contraintes techniques et de la sécurité — depuis
+        l'analyse du besoin jusqu'au choix et à la configuration des équipements.
+      </p>
+    </section>
+
+    <!-- ============ TRAVAIL RÉALISÉ ============ -->
+    <section class="detail-section container detail-prose">
+      <h2 data-i18n="pi_work_title">Travail réalisé</h2>
+      <p data-i18n="pi_work_desc">
+        Nous avons d'abord traduit les besoins de l'entreprise en services
+        concrets : accès Internet pour les postes, centralisation des services sur
+        des serveurs et sécurisation des échanges. Nous avons ensuite défini une
+        architecture détaillée : un cœur de réseau commuté segmenté en VLAN par
+        service, un routeur pour la connectivité externe et un point d'accès Wi-Fi.
+      </p>
+      <p data-i18n="pi_work_desc2">
+        Côté services, l'infrastructure repose sur un serveur Windows avec Active
+        Directory pour la gestion des utilisateurs et des ressources, un serveur
+        Linux pour les services réseau complémentaires, et un serveur de
+        téléphonie (ToIP) pour la communication interne.
+      </p>
+
+      <figure class="detail-figure">
+        <div class="net-diagram-wrap">
+          <svg id="netDiagram" class="net-diagram" viewBox="0 0 860 552"
+            role="group" aria-label="Schéma interactif de l'architecture réseau">
+            <defs>
+              <symbol id="ic-cloud" viewBox="0 0 24 24"><path class="ic" d="M7 18h9.5a3.5 3.5 0 0 0 .8-6.9 5 5 0 0 0-9.6-1.4A3.8 3.8 0 0 0 7 18Z"/></symbol>
+              <symbol id="ic-router" viewBox="0 0 24 24"><rect class="ic" x="3" y="12" width="18" height="7.5" rx="1.5"/><path class="ic" d="M6.5 15.5h.01M9.5 15.5h.01"/><path class="ic" d="M17 12V7.5M14.8 9l2.2-1.8L19.2 9"/></symbol>
+              <symbol id="ic-switch" viewBox="0 0 24 24"><rect class="ic" x="3" y="9" width="18" height="7" rx="1.5"/><path class="ic" d="M7 16v4M12 16v4M17 16v4"/></symbol>
+              <symbol id="ic-server" viewBox="0 0 24 24"><rect class="ic" x="4" y="4" width="16" height="6.5" rx="1.3"/><rect class="ic" x="4" y="13.5" width="16" height="6.5" rx="1.3"/><path class="ic" d="M7.5 7.2h.01M7.5 16.7h.01"/></symbol>
+              <symbol id="ic-phone" viewBox="0 0 24 24"><path class="ic" d="M6 4h3.4l1.7 4.3-2.1 1.4a11 11 0 0 0 4.6 4.6l1.4-2.1 4.3 1.7V18a2 2 0 0 1-2 2A14 14 0 0 1 4 6 2 2 0 0 1 6 4Z"/></symbol>
+              <symbol id="ic-wifi" viewBox="0 0 24 24"><path class="ic" d="M4 9a13 13 0 0 1 16 0M7 12.5a8.5 8.5 0 0 1 10 0M10 16a4 4 0 0 1 4 0"/><path class="ic" d="M12 19h.01"/></symbol>
+              <symbol id="ic-monitor" viewBox="0 0 24 24"><rect class="ic" x="3" y="4" width="18" height="12" rx="1.5"/><path class="ic" d="M9 20h6M12 16v4"/></symbol>
+            </defs>
+
+            <!-- Zones -->
+            <g class="zones">
+              <rect class="zone" x="330" y="14" width="200" height="162" rx="14"/>
+              <text class="zone-label" x="346" y="32" data-i18n="pi_zone_wan">Accès Internet</text>
+              <rect class="zone" x="330" y="196" width="200" height="96" rx="14"/>
+              <text class="zone-label" x="346" y="214" data-i18n="pi_zone_core">Cœur réseau</text>
+              <rect class="zone" x="20" y="340" width="560" height="146" rx="14"/>
+              <text class="zone-label" x="38" y="360" data-i18n="pi_zone_servers">Serveurs</text>
+              <rect class="zone" x="620" y="340" width="220" height="196" rx="14"/>
+              <text class="zone-label" x="638" y="360" data-i18n="pi_zone_users">Accès utilisateurs</text>
+            </g>
+
+            <!-- Liens -->
+            <g class="links">
+              <path class="link" d="M430 92 L430 112"/>
+              <path class="link" d="M430 160 L430 230"/>
+              <path class="link" d="M430 278 L120 378"/>
+              <path class="link" d="M430 278 L305 378"/>
+              <path class="link" d="M430 278 L490 378"/>
+              <path class="link" d="M430 278 L740 378"/>
+              <path class="link" d="M740 426 L740 458"/>
+            </g>
+
+            <!-- Nœuds -->
+            <g class="node" data-key="internet" tabindex="0" role="button">
+              <rect class="node-box" x="350" y="44" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-cloud" x="364" y="56" width="24" height="24"/>
+              <text class="node-label" x="396" y="68" dominant-baseline="middle">Internet</text>
+            </g>
+            <g class="node" data-key="router" tabindex="0" role="button">
+              <rect class="node-box" x="350" y="112" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-router" x="364" y="124" width="24" height="24"/>
+              <text class="node-label" x="396" y="136" dominant-baseline="middle">Routeur</text>
+            </g>
+            <g class="node" data-key="switch" tabindex="0" role="button">
+              <rect class="node-box" x="350" y="230" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-switch" x="364" y="242" width="24" height="24"/>
+              <text class="node-label" x="396" y="254" dominant-baseline="middle">Switch</text>
+            </g>
+            <g class="node" data-key="win" tabindex="0" role="button">
+              <rect class="node-box" x="40" y="378" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-server" x="54" y="390" width="24" height="24"/>
+              <text class="node-label" x="86" y="402" dominant-baseline="middle">Serveur AD</text>
+            </g>
+            <g class="node" data-key="linux" tabindex="0" role="button">
+              <rect class="node-box" x="225" y="378" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-server" x="239" y="390" width="24" height="24"/>
+              <text class="node-label" x="271" y="402" dominant-baseline="middle">Serveur Linux</text>
+            </g>
+            <g class="node" data-key="toip" tabindex="0" role="button">
+              <rect class="node-box" x="410" y="378" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-phone" x="424" y="390" width="24" height="24"/>
+              <text class="node-label" x="456" y="402" dominant-baseline="middle">ToIP</text>
+            </g>
+            <g class="node" data-key="wifi" tabindex="0" role="button">
+              <rect class="node-box" x="660" y="378" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-wifi" x="674" y="390" width="24" height="24"/>
+              <text class="node-label" x="706" y="402" dominant-baseline="middle">Wi-Fi</text>
+            </g>
+            <g class="node" data-key="clients" tabindex="0" role="button">
+              <rect class="node-box" x="660" y="458" width="160" height="48" rx="12"/>
+              <use class="ic-use" href="#ic-monitor" x="674" y="470" width="24" height="24"/>
+              <text class="node-label" x="706" y="482" dominant-baseline="middle">Postes</text>
+            </g>
+          </svg>
+          <div id="diagramInfo" class="diagram-info" aria-live="polite"></div>
+        </div>
+        <figcaption data-i18n="pi_diagram_caption">
+          Architecture réseau de la PME — survolez un élément pour le détail.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ TECHNOLOGIES ============ -->
+    <section class="detail-section container">
+      <h2 data-i18n="pi_stack_title">Technologies &amp; concepts</h2>
+      <ul class="project-stack">
+        <li>Cisco IOS</li><li>VLAN</li><li>Routage</li><li>Wi-Fi</li>
+        <li>Active Directory</li><li>Windows Server</li><li>Linux</li><li>ToIP</li>
+      </ul>
+    </section>
+
+    <!-- ============ RÉSULTAT ============ -->
+    <section class="detail-section container">
+      <div class="detail-card detail-prose">
+        <h2 data-i18n="pi_result_title">Résultat &amp; bilan</h2>
+        <p data-i18n="pi_result_desc">
+          Le projet a abouti à une infrastructure fonctionnelle répondant à
+          l'ensemble des besoins exprimés. Il m'a permis de consolider des
+          compétences clés en conception, configuration et sécurité réseau, tout
+          en renforçant le travail d'équipe et la résolution de problèmes
+          techniques sous contrainte de temps.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Baptiste Ferrand</p>
+      <a href="index.html#top" data-i18n="back_to_top">Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js?v=5"></script>
+  <script src="js/main.js?v=4"></script>
+  <script src="js/diagram.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" data-i18n="meta_description"
+    content="Portfolio de Baptiste Ferrand — Alternant ingénieur en informatique et réseaux." />
+  <meta name="author" content="Baptiste Ferrand" />
+  <title>Baptiste Ferrand — Portfolio</title>
+
+  <!-- Favicon « BF. » intégré en SVG (aucune dépendance externe) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231a1a1a'/><text x='50' y='52' font-family='Segoe UI,Helvetica,Arial,sans-serif' font-size='46' font-weight='800' fill='%23ffffff' text-anchor='middle' dominant-baseline='central'>BF<tspan fill='%234f8cff'>.</tspan></text></svg>" />
+
+  <link rel="stylesheet" href="css/style.css?v=6" />
+</head>
+
+<body>
+  <!-- Skip link accessibilité -->
+  <a class="skip-link" href="#main" data-i18n="skip_link">Aller au contenu</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#top" class="brand">BF<span class="brand-dot">.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu"
+        aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+        <li><a href="#timeline" data-i18n="nav_timeline">Parcours</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        <li class="nav-controls">
+          <button class="ctrl-btn" id="langToggle" aria-label="Changer de langue">
+            <span id="langLabel">EN</span>
+          </button>
+          <button class="ctrl-btn" id="themeToggle" aria-label="Changer de thème">
+            <span class="theme-icon" aria-hidden="true">◐</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO / À PROPOS ============ -->
+    <section class="hero container" id="about">
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Bonjour, je suis</p>
+      <h1 class="hero-name">Baptiste Ferrand</h1>
+      <h2 class="hero-role" data-i18n="hero_role">
+        Alternant ingénieur en informatique &amp; réseaux
+      </h2>
+      <p class="hero-bio" data-i18n="hero_bio">
+        Passionné par les systèmes, les réseaux et le développement, je conçois des
+        infrastructures fiables et des applications utiles. Actuellement en recherche
+        d'un stage à l'étranger pour mettre en pratique mes compétences dans un
+        environnement international.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">Voir mes projets</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero_cta_contact">Me contacter</a>
+      </div>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <section class="section container" id="skills">
+      <h2 class="section-title"><span class="section-icon" aria-hidden="true"></span> <span data-i18n="skills_title">Compétences</span></h2>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3 data-i18n="skills_sysadmin">Administration système &amp; Cloud</h3>
+          <ul>
+            <li>Windows Server / Linux</li>
+            <li>Active Directory</li>
+            <li>Microsoft 365</li>
+            <li>Microsoft Azure</li>
+            <li data-i18n="skills_virtualization">Virtualisation &amp; conteneurs</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3 data-i18n="skills_dev">Développement &amp; scripting</h3>
+          <ul>
+            <li>Python, Bash, PowerShell</li>
+            <li>Java, C, PHP</li>
+            <li>HTML / CSS / JavaScript</li>
+            <li data-i18n="skills_databases">SQL, bases de données</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3 data-i18n="skills_soft">Atouts &amp; langues</h3>
+          <ul>
+            <li data-i18n="skills_personal">Autonome, organisé, curieux</li>
+            <li data-i18n="skills_teamwork">Esprit d'équipe</li>
+            <li data-i18n="skills_french">Français (langue natale)</li>
+            <li data-i18n="skills_english">Anglais — TOEIC B2</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJETS / LABS ============ -->
+    <section class="section container" id="projects">
+      <h2 class="section-title"><span class="section-icon" aria-hidden="true"></span> <span data-i18n="projects_title">Projets &amp; Labs</span></h2>
+
+      <div class="projects-grid">
+        <!-- Projet 1 — Projet intégratif -->
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag" data-i18n="project_tag_network">Réseau</span>
+            <div class="project-links">
+              <a href="projet-integratif.html" aria-label="Voir le détail du projet" title="Détails">↗</a>
+            </div>
+          </div>
+          <h3><a href="projet-integratif.html" data-i18n="project1_title">Conception d'un réseau d'entreprise</a></h3>
+          <p data-i18n="project1_desc">
+            Projet intégratif en équipe de 5 : conception complète du réseau
+            d'une PME fictive — segmentation VLAN, Active Directory, ToIP et
+            sécurité, du recueil des besoins à la mise en œuvre.
+          </p>
+          <ul class="project-stack">
+            <li>Cisco IOS</li><li>VLAN</li><li>Active Directory</li><li>ToIP</li><li>Linux</li>
+          </ul>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag" data-i18n="project_tag_dev">Dev</span>
+            <div class="project-links">
+              <a href="#" aria-label="Code source" title="Code">&lt;/&gt;</a>
+              <a href="#" aria-label="Démo" title="Démo">↗</a>
+            </div>
+          </div>
+          <h3 data-i18n="project2_title">Outil de supervision réseau</h3>
+          <p data-i18n="project2_desc">
+            Script Python qui scanne le réseau local, détecte les équipements
+            actifs et envoie une alerte en cas d'indisponibilité d'un hôte.
+          </p>
+          <ul class="project-stack">
+            <li>Python</li><li>Scapy</li><li>SNMP</li>
+          </ul>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="project-card">
+          <div class="project-head">
+            <span class="project-tag" data-i18n="project_tag_infra">Infra</span>
+            <div class="project-links">
+              <a href="#" aria-label="Code source" title="Code">&lt;/&gt;</a>
+            </div>
+          </div>
+          <h3 data-i18n="project3_title">Serveur auto-hébergé Docker</h3>
+          <p data-i18n="project3_desc">
+            Déploiement de services conteneurisés (reverse proxy, monitoring,
+            stockage) sur un serveur Linux, avec sauvegardes automatisées.
+          </p>
+          <ul class="project-stack">
+            <li>Docker</li><li>Linux</li><li>Traefik</li><li>Bash</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PARCOURS / CV ============ -->
+    <section class="section container" id="timeline">
+      <h2 class="section-title"><span class="section-icon" aria-hidden="true"></span> <span data-i18n="timeline_title">Parcours</span></h2>
+
+      <div class="timeline-groups">
+        <div class="timeline-group">
+          <h3 class="timeline-group-title" data-i18n="timeline_type_exp">Expérience</h3>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-date">2025 — <span data-i18n="present">aujourd'hui</span></span>
+              <h3 data-i18n="exp1_title">Administrateur système</h3>
+              <p class="timeline-org" data-i18n="exp1_org">SPIE ICS · Alternance</p>
+              <p data-i18n="exp1_desc">
+                Administration Active Directory et Microsoft 365 (comptes, groupes,
+                droits d'accès), surveillance et maintenance des serveurs,
+                automatisation de tâches par scripts et résolution d'incidents.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2024 — 2025</span>
+              <h3 data-i18n="exp2_title">Technicien d'exploitation et de supervision</h3>
+              <p class="timeline-org" data-i18n="exp2_org">SPIE ICS · Alternance</p>
+              <p data-i18n="exp2_desc">
+                Surveillance des serveurs et services critiques, diagnostic et
+                résolution des incidents d'exploitation.
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="timeline-group">
+          <h3 class="timeline-group-title" data-i18n="timeline_type_edu">Formation</h3>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-date">2025 — 2028</span>
+              <h3 data-i18n="timeline1_title">Diplôme d'ingénieur en informatique &amp; réseaux</h3>
+              <p class="timeline-org" data-i18n="timeline1_org">IMT Mines Alès (30) · Parcours Systèmes &amp; Réseaux</p>
+              <p data-i18n="timeline1_desc">
+                Formation d'ingénieur en informatique et réseaux, parcours Systèmes
+                et Réseaux.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2023 — 2025</span>
+              <h3 data-i18n="timeline2_title">BUT Réseaux &amp; Télécommunications</h3>
+              <p class="timeline-org" data-i18n="timeline2_org">IUT Clermont Auvergne (63) · Spécialité Cybersécurité</p>
+              <p data-i18n="timeline2_desc">
+                Formation en réseaux et télécommunications, spécialité cybersécurité.
+                2ᵉ année en alternance chez SPIE ICS.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-date">2020 — 2023</span>
+              <h3 data-i18n="timeline3_title">Baccalauréat Général</h3>
+              <p class="timeline-org" data-i18n="timeline3_org">Lycée Toulouse-Lautrec, Toulouse (31)</p>
+              <p data-i18n="timeline3_desc">
+                Spécialités Mathématiques et Physique-Chimie. Section européenne anglais.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="cv-download">
+        <a href="assets/cv-fr.pdf" class="btn btn-primary" download data-i18n="cv_download" data-i18n-href="cv_file">
+          Télécharger mon CV
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container contact" id="contact">
+      <h2 class="section-title"><span class="section-icon" aria-hidden="true"></span> <span data-i18n="contact_title">Contact</span></h2>
+      <p class="contact-lead" data-i18n="contact_lead">
+        Une opportunité de stage à l'étranger, une question, ou juste envie
+        d'échanger ? N'hésite pas à me contacter.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:baptiste.ferrand31@gmail.com" class="contact-link">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          <span data-i18n="contact_email">M'envoyer un e-mail</span>
+        </a>
+        <a href="https://www.linkedin.com/in/baptiste-ferrand123" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon" aria-hidden="true">in</span>
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Baptiste Ferrand</p>
+      <a href="#top" data-i18n="back_to_top">Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
